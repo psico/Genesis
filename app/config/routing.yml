@@ -1,2 +1,6 @@
-app:
+genesis_core:
+    resource: "@GenesisCoreBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
 
