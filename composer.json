@@ -1,8 +1,8 @@
 {
-    "name": "symfony/framework-standard-edition",
+    "name": "genesis/church-manager",
     "license": "MIT",
     "type": "project",
-    "description": "The \"Symfony Standard Edition\" distribution",
+    "description": "O gerenciador de Igreja / The church manager",
     "autoload": {
         "psr-0": { "": "src/", "SymfonyStandard": "app/" }
     },
