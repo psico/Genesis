@@ -17,7 +17,11 @@ class DefaultController extends Controller
      */
     public function indexAction($name)
     {
-        return array('name' => $name);
+//        return array('name' => $name);
+
+        return $this->render('GenesisCoreBundle:Default:index.html.twig', array(
+                'name' => $name,
+            ));
     }
 
     /**
@@ -28,18 +32,18 @@ class DefaultController extends Controller
      */
     public function createAction()
     {
-        for ($i = 0; $i <= 10000; $i++) {
-            $product = new Product();
-            $product->setName('A Foo Bar');
-            $product->setPrice('19.99');
-
-            /** @var Repository $dm */
-            $dm = $this->get('doctrine_mongodb')->getManager();
-            $dm->persist($product);
+//        for ($i = 0; $i <= 10000; $i++) {
+//            $product = new Product();
+//            $product->setName('A Foo Bar');
+//            $product->setPrice('19.99');
+//
+//            /** @var Repository $dm */
+//            $dm = $this->get('doctrine_mongodb')->getManager();
+//            $dm->persist($product);
 
 //            echo 'Created product id '.$product->getId() .'<br/>';
-        }
-        $dm->flush();
+//        }
+//        $dm->flush();
         return new Response('<br/><br/><br/> FIM DE TUDO');
     }
 
@@ -52,17 +56,17 @@ class DefaultController extends Controller
      */
     public function showAction()
     {
-        $product = $this->get('doctrine_mongodb')
-            ->getRepository('GenesisCoreBundle:Product')
-            ->findAll();
+//        $product = $this->get('doctrine_mongodb')
+//            ->getRepository('GenesisCoreBundle:Product')
+//            ->findAll();
 //            ->find($id);
 
-        if (!$product) {
-            throw $this->createNotFoundException('No product found for id '.$id);
-        }
-
-        echo "<pre>";
-        var_dump($product); die;
+//        if (!$product) {
+//            throw $this->createNotFoundException('No product found for id '.$id);
+//        }
+//
+//        echo "<pre>";
+//        var_dump($product); die;
 
         return true;
     }
