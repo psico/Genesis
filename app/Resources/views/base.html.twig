@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
-    </body>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=" UTF-8
+    " />
+    <title>{% block title %}Bem vindo ao Genesis!{% endblock %}</title>
+
+    {% block stylesheets %}
+        {% stylesheets '@GenesisCoreBundle/Resources/views/Default/css/bootstrap.min.css' %}
+        <link rel="stylesheet" href="{{ asset_url }}" type="text/css"/>
+        {% endstylesheets %}
+    {% endblock %}
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}"/>
+</head>
+<body>
+{% block body %}
+    {% block javascripts %}
+        {% javascripts '@GenesisCoreBundle/Resources/views/Default/js/bootstrap.min.js' %}
+        <script type="text/javascript" src="{{ asset_url }}"></script>
+        {% endjavascripts %}
+    {% endblock %}
+    {% block content %}
+    {% endblock %}
+{% endblock %}
+</body>
 </html>

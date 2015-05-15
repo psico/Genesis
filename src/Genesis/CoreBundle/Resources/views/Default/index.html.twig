@@ -1,15 +1,4 @@
-{% block javascripts %}
-    {% javascripts '@GenesisCoreBundle/Resources/views/Default/js/bootstrap.min.js' %}
-        <script type="text/javascript" src="{{ asset_url }}"></script>
-    {% endjavascripts %}
-{% endblock %}
-
-{% block stylesheets %}
-    {% stylesheets '@GenesisCoreBundle/Resources/views/Default/css/bootstrap.min.css' %}
-        <link rel="stylesheet" href="{{ asset_url }}" type="text/css"   />
-    {% endstylesheets %}
-{% endblock %}
-
+{% extends '::base.html.twig' %}
 
 {% block content %}
     <h1>Hello {{ name }}!</h1>
