@@ -13,15 +13,12 @@ class DefaultController extends Controller
 {
     /**
      * @Route("/hello/{name}")
-     * @Template()
+     * @Template("GenesisCoreBundle:Default:index.html.twig")
+     *
      */
     public function indexAction($name)
     {
-//        return array('name' => $name);
-
-        return $this->render('GenesisCoreBundle:Default:index.html.twig', array(
-                'name' => $name,
-            ));
+        return array('name' => $name);
     }
 
     /**
