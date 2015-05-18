@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app>
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=" UTF-8
     " />
@@ -7,8 +7,8 @@
 
     {% block stylesheets %}
         {% stylesheets
-        '@GenesisCoreBundle/Resources/views/Default/css/bootstrap.min.css'
-        '@GenesisCoreBundle/Resources/views/Default/css/bootstrap-responsive.css' %}
+        '@GenesisCoreBundle/Resources/views/Default/bootstrap/css/bootstrap.min.css'
+        '@GenesisCoreBundle/Resources/views/Default/bootstrap/css/bootstrap-responsive.css' %}
         <link rel="stylesheet" href="{{ asset_url }}" type="text/css"/>
         {% endstylesheets %}
         <style type="text/css">
@@ -165,13 +165,18 @@
         <hr>
 
         <footer>
-            <p>Esta sistema esta em versão beta e somente nessa versão é licenciada sob uma <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/br/" rel="license">Licença Creative Commons</a>.</p>
+            <p>Esta sistema esta em versão beta e somente nessa versão é licenciada sob uma <a
+                        href="http://creativecommons.org/licenses/by-nc-sa/2.5/br/" rel="license">Licença Creative
+                    Commons</a>.</p>
         </footer>
 
     </div>
 
 {% block javascripts %}
-    {% javascripts '@GenesisCoreBundle/Resources/views/Default/js/bootstrap.min.js' %}
+    {% javascripts
+    '@GenesisCoreBundle/Resources/views/Default/jquery/js/jquery-1.11.3.js'
+    '@GenesisCoreBundle/Resources/views/Default/bootstrap/js/bootstrap.js'
+    '@GenesisCoreBundle/Resources/views/Default/angular/js/angular.js' %}
     <script type="text/javascript" src="{{ asset_url }}"></script>
     {% endjavascripts %}
 {% endblock %}
