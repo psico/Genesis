@@ -3,4 +3,6 @@ genesis_core:
     type:     annotation
     prefix:   /
 
-
+genesis_routing:
+    resource: "@GenesisCoreBundle/Resources/config/routing.yml"
+    prefix:   /

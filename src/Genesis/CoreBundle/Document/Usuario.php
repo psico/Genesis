@@ -1,12 +1,13 @@
 <?php
 namespace Genesis\CoreBundle\Document;
 
+use FOS\UserBundle\Model\User as BaseUser;
 use Doctrine\ODM\MongoDB\Mapping\Annotations as MongoDB;
 
 /**
  * @MongoDB\Document
  */
-class Usuario
+class Usuario extends BaseUser
 {
     /**
      * @MongoDB\Id
@@ -32,6 +33,10 @@ class Usuario
      * @MongoDB\String
      */
     protected $strEmail;
+
+    public function __construct(){
+        parent::__construct();
+    }
 
     /**
      * Get id
