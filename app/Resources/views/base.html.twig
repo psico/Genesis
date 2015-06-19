@@ -46,11 +46,7 @@
                                 {{ 'layout.logout'|trans({}, 'FOSUserBundle') }}
                             </a>
                         </p>
-                        <ul class="nav">
-                            <li class="active"><a href="#">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
+                        {{ knp_menu_render('GenesisCoreBundle:Builder:mainMenu', {'template': 'GenesisCoreBundle:Menu:knp_menu_top.html.twig'}) }}
                     {% else %}
                         <p class="navbar-text pull-right">
                             <a href="{{ path('fos_user_security_login') }}">{{ 'layout.login'|trans({}, 'FOSUserBundle') }}</a>
@@ -66,18 +62,17 @@
 
     <div class="container-fluid">
         <div class="row-fluid">
-            {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
-                {% block sidebar_navbar %}
-                    <div class="span3">
-                        <div class="well sidebar-nav">
-                            {{ knp_menu_render('GenesisCoreBundle:Builder:mainMenu', {'template': 'GenesisCoreBundle:Menu:knp_menu.html.twig'}) }}
-                        </div>
-                        <!--/.well -->
-                    </div><!--/span-->
-                {% endblock %}
-            {% endif %}
+            {#{% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}#}
+                {#{% block sidebar_navbar %}#}
+                    {#<div class="span3">#}
+                        {#<div class="well sidebar-nav">#}
+                            {#{{ knp_menu_render('GenesisCoreBundle:Builder:mainMenu', {'template': 'GenesisCoreBundle:Menu:knp_menu_left.html.twig'}) }}#}
+                        {#</div>#}
+                    {#</div>#}
+                {#{% endblock %}#}
+            {#{% endif %}#}
             {% block content %}
-                <div class="span9">
+                <div class="span12">
                     <div class="hero-unit">
                         <h1>Hello, world!</h1>
 
