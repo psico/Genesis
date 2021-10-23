@@ -1,14 +1,22 @@
 Genesis
 ========================
+<p align="left">
+  <a href="https://github.com/psico/ludo-app/blob/master/LICENSE">
+    <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT license." />
+  </a>
+  <a href="https://github.com/psico/ludo-app">
+    <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs welcome!" />
+  </a>
+</p>
 
 Este aplicativo tem por objetivo controlar, manter e principalmente gerenciar as principais atividades de uma igreja.
-O projeto tambÈm tenta aplicar pr·ticas e frameworks recentes de desenvolvimento de software prezando pela boa qualidade de desenvolvimento.
-Inicialmente ele tem cÛdigo fonte aberto e contribuiÁıes s„o bem vindas.
+O projeto tamb√©m tenta aplicar pr√°ticas e frameworks recentes de desenvolvimento de software prezando pela boa qualidade de desenvolvimento.
+Inicialmente ele tem c√≥digo fonte aberto e contribui√ß√µes s√£o bem vindas.
 
-O que esta sendo(ser·) usado?
+O que esta sendo(ser√°) usado?
 -----------------------
 
-  * Linguagem de programaÁ„o ser· o [**PHP (v5.4.31)**][1];
+  * Linguagem de programa√ß√£o ser√° o [**PHP (v5.4.31)**][1];
 
   * [**Symfony 2 (v2.6.6)**][2];
 
@@ -20,7 +28,7 @@ O que esta sendo(ser·) usado?
 
   * [**DoctrineBundle**][6];
 
-  * Todas as libraries e bundles prÈ-configurados e inclusos no Symfony Standard Edition.
+  * Todas as libraries e bundles pr√©-configurados e inclusos no Symfony Standard Edition.
 
   * Annotations enabled for everything.
 
