@@ -13,6 +13,8 @@ Este aplicativo tem por objetivo controlar, manter e principalmente gerenciar as
 O projeto também tenta aplicar práticas e frameworks recentes de desenvolvimento de software prezando pela boa qualidade de desenvolvimento.
 Inicialmente ele tem código fonte aberto e contribuições são bem vindas.
 
+PROJETO DESCONTINUADO
+
 O que esta sendo(será) usado?
 -----------------------
 
